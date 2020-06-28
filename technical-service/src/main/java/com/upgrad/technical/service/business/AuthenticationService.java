@@ -4,6 +4,7 @@ package com.upgrad.technical.service.business;
 import com.upgrad.technical.service.dao.UserDao;
 import com.upgrad.technical.service.entity.UserAuthTokenEntity;
 import com.upgrad.technical.service.entity.UserEntity;
+import com.upgrad.technical.service.exception.AuthenticationFailedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -21,7 +22,7 @@ public class AuthenticationService {
     private PasswordCryptographyProvider cryptographyProvider;
 
     @Transactional(propagation = Propagation.REQUIRED)
-    public UserAuthTokenEntity authenticate(final String username , final String password) {
+    public UserAuthTokenEntity authenticate(final String username , final String password) throws AuthenticationFailedException {
         //Idea here is to fetch the user from users table with entered email
         //Call the getUserByEmail() method in UserDao class for userDao object and pass username(email) as argument
         //getUserByEmail() method returns UserEntity type object
@@ -36,9 +37,12 @@ public class AuthenticationService {
         //Pass the password entered by the user as the first argument
         //Pass the Salt as the second argument.Get salt from userEntity which has been stored in a database
         //Receive the value returned by the encrypt() method in a String(name it as encryptedPassword)
+        if(userEntity == null){
+            throw new AuthenticationFailedException("ATH 001", "User with email not found");
+        }
 
         //Write the code here//
-        String encryptedPassword = cryptographyProvider.encrypt(password, userEntity.getSalt());
+        final String encryptedPassword = cryptographyProvider.encrypt(password, userEntity.getSalt());
 
         //Now encryptedPassword contains the password entered by the user in encryppted form
         //And userEntity.getPassword() gives the password stored in the database in encrypted form
@@ -78,7 +82,7 @@ public class AuthenticationService {
             //throw exception
             //Will be covered in next Assessment
             //We are assuming that the password is correct, so control will not come here
-            return null;
+            throw new AuthenticationFailedException("ATH-002", "Password Failed");
         }
     }
 }

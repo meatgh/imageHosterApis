@@ -5,6 +5,7 @@ import com.upgrad.technical.api.model.AuthorizedUserResponse;
 import com.upgrad.technical.service.business.AuthenticationService;
 import com.upgrad.technical.service.entity.UserAuthTokenEntity;
 import com.upgrad.technical.service.entity.UserEntity;
+import com.upgrad.technical.service.exception.AuthenticationFailedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -32,7 +33,7 @@ public class AuthenticationController {
     //Write the annotation to map this method with Http request of POST type, map it with URL request of type '/auth/login' and it produces Json
     //Write the annotation here//
     @RequestMapping(method = RequestMethod.POST, path = "/auth/login", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<AuthorizedUserResponse> login(@RequestHeader("authorization")  final String authorization)  {
+    public ResponseEntity<AuthorizedUserResponse> login(@RequestHeader("authorization")  final String authorization) throws AuthenticationFailedException {
         //Pay attention
         //This method receives the credentials entered by the user at login time in Base64 encoded format
         //"email:password" is encrypted to Base64 format and entered in authorization header which is received by this method in a String variable named authorization
