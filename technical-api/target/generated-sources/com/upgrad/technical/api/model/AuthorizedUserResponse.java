@@ -15,7 +15,7 @@ import javax.validation.constraints.*;
  */
 @ApiModel(description = "Object, which describes the successfully authenticated user details")
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-06-28T20:54:23.144+05:30")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-06-30T00:12:07.047+05:30")
 
 public class AuthorizedUserResponse   {
   @JsonProperty("id")

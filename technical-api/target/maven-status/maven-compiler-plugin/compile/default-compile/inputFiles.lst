@@ -7,6 +7,8 @@ C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\controller\SignupController.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\RoleRequest.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UsersSummaryResponse.java
+C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\ImageUploadRequest.java
+C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\ImageUploadResponse.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\RoleDetailsType.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\api\ApiResponseMessage.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\config\SwaggerConfiguration.java
@@ -16,6 +18,7 @@ C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\targ
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\api\NotFoundException.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UserStatusType.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UserOperationRequest.java
+C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\controller\ImageUploadController.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\Swagger2SpringBoot.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\configuration\SwaggerDocumentationConfig.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\ErrorResponse.java
