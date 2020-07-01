@@ -2,6 +2,7 @@ package com.upgrad.technical.api.exception;
 
 import com.upgrad.technical.api.model.ErrorResponse;
 import com.upgrad.technical.service.exception.AuthenticationFailedException;
+import com.upgrad.technical.service.exception.ImageNotFoundException;
 import com.upgrad.technical.service.exception.UploadFailedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,6 +34,13 @@ public class RestExceptionHandler {
 
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(upfe.getCode()).message(upfe.getErrorMessage()), HttpStatus.UNAUTHORIZED
+        );
+    }
+
+    @ExceptionHandler(ImageNotFoundException.class)
+    public ResponseEntity<ErrorResponse> imagenotfoundException(ImageNotFoundException exc, WebRequest request) {
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(exc.getCode()).message(exc.getErrorMessage()), HttpStatus.NOT_FOUND
         );
     }
 }

@@ -1,3 +1,4 @@
+C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\controller\AdminController.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\TechnicalApiApplication.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\RoleType.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\api\ApiException.java
@@ -14,6 +15,7 @@ C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\targ
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\config\SwaggerConfiguration.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\SignupUserRequest.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UpdateUserRequest.java
+C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UpdateImageRequest.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\RFC3339DateFormat.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\api\NotFoundException.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UserStatusType.java
@@ -30,4 +32,5 @@ C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\targ
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UserDetailsResponse.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\src\main\java\com\upgrad\technical\api\exception\RestExceptionHandler.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\UserOperationsRequest.java
+C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\com\upgrad\technical\api\model\ImageDetailsResponse.java
 C:\Users\syerahma\Desktop\Studies All\APIs-ImageHoster\stub_1\technical-api\target\generated-sources\.\io\swagger\api\ApiOriginFilter.java

@@ -49,6 +49,7 @@ public class UserDao {
     }
 
     public void updateUser(final UserEntity updatedUserEntity) {
+
         entityManager.merge(updatedUserEntity);
     }
 }

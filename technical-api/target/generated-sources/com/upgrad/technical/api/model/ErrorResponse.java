@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  * ErrorResponse
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-06-30T00:12:07.217+05:30")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-07-02T00:36:29.876+05:30")
 
 public class ErrorResponse   {
   @JsonProperty("code")
@@ -21,6 +21,9 @@ public class ErrorResponse   {
 
   @JsonProperty("message")
   private String message = null;
+
+  @JsonProperty("root_cause")
+  private String rootCause = null;
 
   public ErrorResponse code(String code) {
     this.code = code;
@@ -64,6 +67,26 @@ public class ErrorResponse   {
     this.message = message;
   }
 
+  public ErrorResponse rootCause(String rootCause) {
+    this.rootCause = rootCause;
+    return this;
+  }
+
+  /**
+   * Root cause of the Error
+   * @return rootCause
+  **/
+  @ApiModelProperty(value = "Root cause of the Error")
+
+
+  public String getRootCause() {
+    return rootCause;
+  }
+
+  public void setRootCause(String rootCause) {
+    this.rootCause = rootCause;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -75,12 +98,13 @@ public class ErrorResponse   {
     }
     ErrorResponse errorResponse = (ErrorResponse) o;
     return Objects.equals(this.code, errorResponse.code) &&
-        Objects.equals(this.message, errorResponse.message);
+        Objects.equals(this.message, errorResponse.message) &&
+        Objects.equals(this.rootCause, errorResponse.rootCause);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, message);
+    return Objects.hash(code, message, rootCause);
   }
 
   @Override
@@ -90,6 +114,7 @@ public class ErrorResponse   {
     
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
+    sb.append("    rootCause: ").append(toIndentedString(rootCause)).append("\n");
     sb.append("}");
     return sb.toString();
   }

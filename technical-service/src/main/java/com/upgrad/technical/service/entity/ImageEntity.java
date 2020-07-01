@@ -25,6 +25,9 @@ STATUS                                   VARCHAR(26)
 
 @Entity
 @Table(name = "IMAGES", schema = "imagehoster")
+@NamedQueries({
+        @NamedQuery(name = "ImageEntityByUuid", query = "select i from ImageEntity i where i.uuid = :uuid")
+})
 public class ImageEntity implements Serializable {
 
     //Write the annotation which specifies that id attrribute is a primary key
@@ -34,7 +37,7 @@ public class ImageEntity implements Serializable {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(name = "UUID")
     //Write the annotation to specify that uuid can have maximum size of 64
@@ -67,11 +70,11 @@ public class ImageEntity implements Serializable {
     @Column(name = "STATUS")
     private String status;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
